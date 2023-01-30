@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&family=Staatliches&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #160101;
+}
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-gap: 100px;
+}
+.hero-imgfondo{
+
+}
+.hero-imgfondo img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-text{
+    position: relative;
+    bottom: 50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.hero-titulo{
+    font-family: 'Staatliches', cursive;
+    font-size: 7rem;
+}
+.hero-subtitulo{
+    font-family: 'Staatliches', cursive;
+
+}
+.hero-lore{
+    font-family: 'Manjari', sans-serif;
+}
+
+
+
+
+
+
+
+
+/*PIE DE PAGINA*/
+footer {
+    width: 100%;
+    background-color: #000;
+}
+
+.tldr {
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.tldr small {
+    font-size: 15px;
+}
