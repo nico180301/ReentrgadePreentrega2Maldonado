@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+}
 body{
     display: grid;
     place-content: center;
@@ -14,9 +17,12 @@ body{
     background-image: linear-gradient(to bottom right, #160101 25%, #240202 50%, #4e0202 75%, #6c0202 100%);
     background-size: 200% 200%;
     animation: fanimado 10s linear infinite alternate;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+    
 }
-
-
 
 
 
@@ -73,8 +79,13 @@ body{
     padding: 0 30%;
 }
 
-
-
+/*CARRUSEL*/
+.carousel{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -82,8 +93,9 @@ body{
 
 /*PIE DE PAGINA*/
 footer {
-    width: 100%;
     background-color: #000;
+    width: 100%;
+    margin-top: auto;
 }
 
 .tldr {
@@ -105,9 +117,43 @@ footer {
     }
 }
 
-@media screen and (max-width: 350) {
+@media screen and (max-width: 480px) {
     
+
+    /*MAIN*/
     .hero-Ornn{
+        text-align: center;
+    }
+
+    .hero-imgfondo img{
+        width: 95%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .hero-subtitulo h2{
+        font-size: 1rem;
+    }
+
+    .hero-titulo h1{
+        font-size: calc(22.24px + 4.3vw);
+    }
+
+    .hero-lore h4{
+        padding: 2px 20px 0px;
+        font-size: 10px;
+        letter-spacing: 0.04em;
+    }
+
+    /*FOOTER*/
+    .tldr {
         
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .tldr small {
+        font-size: 13px;
     }
 }
